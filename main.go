@@ -4,8 +4,6 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/google/uuid"
 )
 
 // Factorial function using loop
@@ -47,11 +45,4 @@ func main() {
 	n := 11
 	fmt.Println("Factorial of", n, "using recursion:", FactRec(n))
 	fmt.Println("Factorial of", n, "using loop:", FactLoop(n))
-}
-func NewUniqueID() string {
-	return generateUUID()
-}
-
-func generateUUID() string {
-	return uuid.NewString()
 }
